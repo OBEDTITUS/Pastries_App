@@ -95,7 +95,7 @@ class AuthPage extends StatelessWidget {
                   ),
                 ),
 
-                SizedBox(height: MediaQuery.of(context).size.height * 0.55),
+                SizedBox(height: MediaQuery.of(context).size.height * 0.50),
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(

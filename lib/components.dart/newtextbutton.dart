@@ -37,8 +37,8 @@ class Newtextbutton extends StatelessWidget {
             SizedBox(width: 8),
             Image.asset(
               imagePath,
-              height: MediaQuery.of(context).size.height * 0.02,
-              width: MediaQuery.of(context).size.width * 0.02,
+              height: MediaQuery.of(context).size.height * 0.04,
+              width: MediaQuery.of(context).size.width * 0.04,
             ),
           ],
         ),

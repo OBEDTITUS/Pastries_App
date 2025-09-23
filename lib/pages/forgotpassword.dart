@@ -56,7 +56,6 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
               const SizedBox(height: 10),
               Row(
                 children: [
-                  // Country column
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: const [
@@ -73,7 +72,6 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                   ),
                   const SizedBox(width: 10),
 
-                  // Number column
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -111,7 +109,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                   ),
                 ],
               ),
-              SizedBox(height: MediaQuery.of(context).size.height * 0.65),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.58),
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(

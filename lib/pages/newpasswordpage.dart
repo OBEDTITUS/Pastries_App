@@ -73,7 +73,7 @@ class Newpasswordpage extends StatelessWidget {
             ),
           ),
           NewTextfield(controller: passwordController, hintText: " Password"),
-          SizedBox(height: MediaQuery.of(context).size.height * 0.5),
+          SizedBox(height: MediaQuery.of(context).size.height * 0.35),
           Padding(
             padding: const EdgeInsets.only(left: 15.0, right: 15.0),
             child: SizedBox(

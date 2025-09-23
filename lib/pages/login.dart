@@ -170,7 +170,7 @@ class Login extends StatelessWidget {
                       ),
                       Padding(
                         padding: const EdgeInsets.only(
-                          top: 10.0,
+                          top: 8.0,
                           left: 15.0,
                           right: 15.0,
                         ),
@@ -181,7 +181,7 @@ class Login extends StatelessWidget {
                         ),
                       ),
                       SizedBox(
-                        height: MediaQuery.of(context).size.height * 0.08,
+                        height: MediaQuery.of(context).size.height * 0.04,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
