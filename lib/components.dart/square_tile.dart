@@ -36,7 +36,7 @@ class _SquareTileState extends State<SquareTile> {
     return Padding(
       padding: const EdgeInsets.only(left: 15, right: 15, top: 8, bottom: 8),
       child: Container(
-        height: 110,
+        height: MediaQuery.of(context).size.height * 0.15,
         padding: const EdgeInsets.all(5),
         decoration: BoxDecoration(
           border: Border.all(color: Colors.grey.shade300),
@@ -50,12 +50,12 @@ class _SquareTileState extends State<SquareTile> {
               borderRadius: BorderRadius.circular(12),
               child: Image.asset(
                 widget.imagePath!,
-                height: 90,
-                width: 90,
+                height: MediaQuery.of(context).size.height * 0.12,
+                width: MediaQuery.of(context).size.width * 0.12,
                 fit: BoxFit.cover,
               ),
             ),
-            const SizedBox(width: 20),
+            SizedBox(width: MediaQuery.of(context).size.width * 0.02),
 
             Expanded(
               child: Column(
@@ -70,7 +70,7 @@ class _SquareTileState extends State<SquareTile> {
                       fontWeight: FontWeight.w500,
                     ),
                   ),
-                  const SizedBox(height: 5),
+                  SizedBox(height: MediaQuery.of(context).size.height * 0.01),
                   Text(
                     '\$${widget.price.toStringAsFixed(2)}',
                     style: const TextStyle(
@@ -98,8 +98,8 @@ class _SquareTileState extends State<SquareTile> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Container(
-                      height: 30,
-                      width: 30,
+                      height: MediaQuery.of(context).size.height * 0.04,
+                      width: MediaQuery.of(context).size.width * 0.08,
                       decoration: BoxDecoration(
                         color: const Color.fromRGBO(251, 205, 23, 1),
                         borderRadius: BorderRadius.circular(6),
@@ -115,7 +115,7 @@ class _SquareTileState extends State<SquareTile> {
                         onPressed: increaseQuantity,
                       ),
                     ),
-                    const SizedBox(width: 8),
+                    SizedBox(width: MediaQuery.of(context).size.width * 0.02),
 
                     Text(
                       "$quantity",
@@ -124,11 +124,11 @@ class _SquareTileState extends State<SquareTile> {
                         fontWeight: FontWeight.w600,
                       ),
                     ),
-                    const SizedBox(width: 8),
+                    SizedBox(width: MediaQuery.of(context).size.width * 0.02),
 
                     Container(
-                      height: 30,
-                      width: 30,
+                      height: MediaQuery.of(context).size.height * 0.04,
+                      width: MediaQuery.of(context).size.width * 0.08,
                       decoration: BoxDecoration(
                         color: const Color.fromRGBO(251, 205, 23, 1),
                         borderRadius: BorderRadius.circular(6),

@@ -24,14 +24,20 @@ class CategoryCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Center(child: Image.asset(imagePath, height: 30, width: 30)),
+            Center(
+              child: Image.asset(
+                imagePath,
+                height: MediaQuery.of(context).size.height * 0.05,
+                width: MediaQuery.of(context).size.width * 0.05,
+              ),
+            ),
 
-            SizedBox(width: 5),
+            SizedBox(width: MediaQuery.of(context).size.width * 0.02),
             Center(
               child: Text(
                 text,
                 style: TextStyle(
-                  fontSize: 12,
+                  fontSize: MediaQuery.of(context).size.height * 0.015,
                   fontWeight: FontWeight.bold,
                   color: Colors.brown[800],
                 ),

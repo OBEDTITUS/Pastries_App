@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class NewTextfield extends StatefulWidget {
   final TextEditingController controller;
   final String hintText;
-  final bool obscureText; // default passed from outside
+  final bool obscureText;
 
   const NewTextfield({
     super.key,
@@ -17,12 +17,12 @@ class NewTextfield extends StatefulWidget {
 }
 
 class _NewTextfieldState extends State<NewTextfield> {
-  late bool _obscureText; // internal state
+  late bool _obscureText;
 
   @override
   void initState() {
     super.initState();
-    _obscureText = widget.obscureText; // initialize from widget
+    _obscureText = widget.obscureText;
   }
 
   @override
@@ -44,7 +44,7 @@ class _NewTextfieldState extends State<NewTextfield> {
                     });
                   },
                 )
-              : null, // no eye icon if it's not a password field
+              : null,
           enabledBorder: OutlineInputBorder(
             borderSide: const BorderSide(color: Colors.black38),
             borderRadius: BorderRadius.circular(

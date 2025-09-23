@@ -21,7 +21,7 @@ class Login extends StatelessWidget {
       body: Column(
         children: [
           Container(
-            height: 150,
+            height: MediaQuery.of(context).size.height * 0.2,
             width: double.infinity,
             decoration: BoxDecoration(
               gradient: LinearGradient(
@@ -36,8 +36,8 @@ class Login extends StatelessWidget {
             child: Center(
               child: Image.asset(
                 "lib/assets/logoimage.png",
-                width: 80,
-                height: 80,
+                width: MediaQuery.of(context).size.width * 0.5,
+                height: MediaQuery.of(context).size.height * 0.1,
               ),
             ),
           ),
@@ -64,8 +64,8 @@ class Login extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.only(bottom: 50.0),
                         child: Container(
-                          height: 4,
-                          width: 120,
+                          height: MediaQuery.of(context).size.height * 0.009,
+                          width: MediaQuery.of(context).size.width * 0.3,
                           color: Colors.grey,
                         ),
                       ),
@@ -83,7 +83,9 @@ class Login extends StatelessWidget {
                         textAlign: TextAlign.center,
                         style: TextStyle(),
                       ),
-                      SizedBox(height: 20),
+                      SizedBox(
+                        height: MediaQuery.of(context).size.height * 0.03,
+                      ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
 
@@ -102,13 +104,17 @@ class Login extends StatelessWidget {
                               ),
                             ),
                           ),
-                          SizedBox(height: 8.1),
+                          SizedBox(
+                            height: MediaQuery.of(context).size.height * 0.006,
+                          ),
                           MyTextfield(
                             controller: usernameController,
                             hintText: "Enter your Email",
                             obscureText: false,
                           ),
-                          SizedBox(height: 5),
+                          SizedBox(
+                            height: MediaQuery.of(context).size.height * 0.006,
+                          ),
                           Padding(
                             padding: const EdgeInsets.symmetric(
                               horizontal: 18.0,
@@ -174,7 +180,9 @@ class Login extends StatelessWidget {
                           onTap: () {},
                         ),
                       ),
-                      SizedBox(height: 60),
+                      SizedBox(
+                        height: MediaQuery.of(context).size.height * 0.08,
+                      ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [

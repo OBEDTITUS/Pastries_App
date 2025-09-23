@@ -25,22 +25,16 @@ class _WelcomePageState extends State<WelcomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(251, 205, 23, 1), // yellow bg
+      backgroundColor: const Color.fromRGBO(251, 205, 23, 1),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset("lib/assets/logoimage.png", width: 160, height: 160),
-            //const SizedBox(height: 20),
-
-            // const Text(
-            //   "PastriesApp",
-            //   style: TextStyle(
-            //     fontSize: 28,
-            //     fontWeight: FontWeight.bold,
-            //     color: Colors.white,
-            //   ),
-            // ),
+            Image.asset(
+              "lib/assets/logoimage.png",
+              width: MediaQuery.of(context).size.width * 0.4,
+              height: MediaQuery.of(context).size.height * 0.2,
+            ),
           ],
         ),
       ),

@@ -66,7 +66,9 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: Colors.white,
         centerTitle: true,
         title: Text(
           "Product Details",
@@ -85,7 +87,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 child: Image.asset(
                   widget.imagePath,
                   width: double.infinity,
-                  height: 250,
+                  height: MediaQuery.of(context).size.height * 0.3,
                   fit: BoxFit.cover,
                 ),
               ),
@@ -117,8 +119,8 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           Container(
-                            height: 30,
-                            width: 30,
+                            height: MediaQuery.of(context).size.height * 0.04,
+                            width: MediaQuery.of(context).size.width * 0.08,
                             decoration: BoxDecoration(
                               color: const Color.fromRGBO(251, 205, 23, 1),
                               borderRadius: BorderRadius.circular(6),
@@ -134,20 +136,24 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                               onPressed: increaseQuantity,
                             ),
                           ),
-                          const SizedBox(width: 8),
+                          SizedBox(
+                            width: MediaQuery.of(context).size.width * 0.02,
+                          ),
 
                           Text(
                             "$quantity",
                             style: const TextStyle(
-                              fontSize: 16,
+                              fontSize: 18,
                               fontWeight: FontWeight.w600,
                             ),
                           ),
-                          const SizedBox(width: 8),
+                          SizedBox(
+                            width: MediaQuery.of(context).size.width * 0.02,
+                          ),
 
                           Container(
-                            height: 30,
-                            width: 30,
+                            height: MediaQuery.of(context).size.height * 0.04,
+                            width: MediaQuery.of(context).size.width * 0.08,
                             decoration: BoxDecoration(
                               color: const Color.fromRGBO(251, 205, 23, 1),
                               borderRadius: BorderRadius.circular(6),
@@ -167,7 +173,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 10),
+                  SizedBox(height: MediaQuery.of(context).size.height * 0.02),
                   Text(
                     "Description",
                     style: const TextStyle(
@@ -175,12 +181,12 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(height: 10),
+                  SizedBox(height: MediaQuery.of(context).size.height * 0.01),
                   Text(
                     "This Pastry is a favorite, wrapped in a golden, flaky pastry crust that’s baked to perfection. ",
                     style: const TextStyle(fontSize: 18),
                   ),
-                  SizedBox(height: 10),
+                  SizedBox(height: MediaQuery.of(context).size.height * 0.01),
                   Text(
                     "Select Size",
                     style: const TextStyle(
@@ -188,9 +194,9 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  const SizedBox(height: 5),
+                  SizedBox(height: MediaQuery.of(context).size.height * 0.01),
                   Row(children: [SizeCard()]),
-                  const SizedBox(height: 20),
+                  SizedBox(height: MediaQuery.of(context).size.height * 0.02),
                   Row(
                     children: [
                       Text(

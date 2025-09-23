@@ -32,12 +32,12 @@ class FoodItemCard extends StatelessWidget {
               borderRadius: BorderRadius.circular(16),
               child: Image.asset(
                 imagePath,
-                height: 120,
+                height: MediaQuery.of(context).size.height * 0.15,
                 width: double.infinity,
                 fit: BoxFit.cover,
               ),
             ),
-            const SizedBox(height: 8),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.01),
 
             Text(
               title,
@@ -48,7 +48,7 @@ class FoodItemCard extends StatelessWidget {
               subtitle,
               style: TextStyle(color: Colors.grey[600], fontSize: 13),
             ),
-            const SizedBox(height: 8),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.01),
 
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -63,8 +63,8 @@ class FoodItemCard extends StatelessWidget {
                 InkWell(
                   onTap: onAdd,
                   child: Container(
-                    height: 32,
-                    width: 32,
+                    height: MediaQuery.of(context).size.height * 0.04,
+                    width: MediaQuery.of(context).size.width * 0.085,
                     decoration: BoxDecoration(
                       color: Colors.amber,
                       borderRadius: BorderRadius.circular(8),

@@ -16,7 +16,7 @@ class FavoritesPage extends StatelessWidget {
       body: Center(
         child: Row(
           children: [
-            SizedBox(width: 110),
+            SizedBox(width: MediaQuery.of(context).size.width * 0.25),
             Icon(Icons.favorite, size: 50, color: Colors.grey),
             Text("No Favorites Yet"),
           ],

@@ -12,7 +12,10 @@ class Forgotpasswordbutton extends StatelessWidget {
         backgroundColor: Colors.transparent,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
-          side: BorderSide(color: Colors.transparent, width: 2),
+          side: BorderSide(
+            color: Colors.transparent,
+            width: MediaQuery.of(context).size.width * 0.005,
+          ),
         ),
       ),
       onPressed: () {

@@ -65,7 +65,7 @@ class AuthPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: List.generate(4, (index) {
                       return SizedBox(
-                        width: 80,
+                        width: MediaQuery.of(context).size.width * 0.2,
 
                         child: TextField(
                           keyboardType: TextInputType.number,

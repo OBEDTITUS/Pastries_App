@@ -52,7 +52,7 @@ class HomePage extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  SizedBox(width: 4),
+                  SizedBox(width: MediaQuery.of(context).size.width * 0.03),
                   Text(
                     'Hello Emily!',
                     style: TextStyle(fontSize: 27, fontWeight: FontWeight.bold),
@@ -87,7 +87,7 @@ class HomePage extends StatelessWidget {
           ),
         ),
         body: Padding(
-          padding: const EdgeInsets.only(left: 15.0, right: 15.0, top: 10.0),
+          padding: const EdgeInsets.only(left: 15.0, right: 15.0, top: 9.0),
           child: Column(
             children: [
               Row(
@@ -98,21 +98,21 @@ class HomePage extends StatelessWidget {
                       decoration: InputDecoration(
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
-                          borderSide: BorderSide(color: Colors.grey.shade300),
+                          borderSide: BorderSide(color: Colors.grey.shade400),
                         ),
                         labelText: 'Search',
                         prefixIcon: Icon(Icons.search, color: Colors.grey[500]),
                       ),
                     ),
                   ),
-                  SizedBox(width: 10),
+                  SizedBox(width: MediaQuery.of(context).size.width * 0.03),
                   Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
                       color: Color.fromRGBO(251, 205, 23, 1),
                     ),
-                    width: 58,
-                    height: 48,
+                    width: MediaQuery.of(context).size.width * 0.17,
+                    height: MediaQuery.of(context).size.height * 0.055,
 
                     child: IconButton(
                       onPressed: () {},
@@ -122,11 +122,10 @@ class HomePage extends StatelessWidget {
                 ],
               ),
 
-              SizedBox(height: 20),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.02),
               Hometopcard(imagePath: 'lib/assets/pastries4.jpeg'),
-              SizedBox(height: 20),
-
-              SizedBox(height: 10),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.01),
               Row(
                 children: [
                   Text(
@@ -154,19 +153,19 @@ class HomePage extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 10),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.01),
               Row(
                 children: [
                   CategoryCard(
                     imagePath: 'lib/assets/pastries1.jpeg',
                     text: 'Cakes',
                   ),
-                  SizedBox(width: 10),
+                  SizedBox(width: MediaQuery.of(context).size.width * 0.03),
                   CategoryCard(
                     imagePath: 'lib/assets/pastries4.jpeg',
                     text: 'Breads',
                   ),
-                  SizedBox(width: 10),
+                  SizedBox(width: MediaQuery.of(context).size.width * 0.03),
                   CategoryCard(
                     imagePath: 'lib/assets/pastries3.jpeg',
                     text: 'Pastries',
@@ -174,7 +173,7 @@ class HomePage extends StatelessWidget {
                 ],
               ),
 
-              SizedBox(height: 15),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.015),
               Row(
                 children: [
                   Text(

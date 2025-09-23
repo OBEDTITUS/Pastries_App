@@ -85,7 +85,9 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                             fontWeight: FontWeight.w500,
                           ),
                         ),
-                        const SizedBox(height: 3),
+                        SizedBox(
+                          height: MediaQuery.of(context).size.height * 0.005,
+                        ),
                         TextField(
                           decoration: InputDecoration(
                             hintText: "+234 8113456789",
@@ -109,9 +111,8 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                   ),
                 ],
               ),
-              SizedBox(height: 500),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.65),
               SizedBox(
-                //height: 80,
                 width: double.infinity,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
@@ -144,27 +145,3 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
     );
   }
 }
- // Container(
-                  //   height: 60,
-                  //   width: 300,
-                  //   padding: EdgeInsets.all(8),
-                  //   child: Center(
-                  //     child: TextField(
-                  //       decoration: InputDecoration(
-                  //         hintText: "+234 8113456789",
-                  //         enabledBorder: OutlineInputBorder(
-                  //           borderSide: BorderSide(color: Colors.black),
-                  //           borderRadius: BorderRadius.circular(
-                  //             MediaQuery.of(context).size.width * 0.02,
-                  //           ),
-                  //         ),
-                  //         focusedBorder: OutlineInputBorder(
-                  //           borderSide: BorderSide(color: Colors.black38),
-                  //         ),
-                  //         fillColor: Colors.transparent,
-                  //         filled: true,
-                  //         hintStyle: TextStyle(color: Colors.grey[600]),
-                  //       ),
-                  //     ),
-                  //   ),
-                  // ),

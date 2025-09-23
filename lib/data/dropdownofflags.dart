@@ -14,8 +14,8 @@ class _DropDownWithFlagsState extends State<DropDownWithFlags> {
     return Row(
       children: [
         SizedBox(
-          width: 115,
-          height: 50,
+          width: MediaQuery.of(context).size.width * 0.24,
+          height: MediaQuery.of(context).size.height * 0.06,
 
           child: Container(
             decoration: BoxDecoration(
@@ -36,8 +36,8 @@ class _DropDownWithFlagsState extends State<DropDownWithFlags> {
                       children: [
                         Image.asset(
                           "lib/assets/nigeriaflag.jpeg",
-                          height: 50,
-                          width: 50,
+                          height: MediaQuery.of(context).size.height * 0.1,
+                          width: MediaQuery.of(context).size.width * 0.1,
                         ),
                       ],
                     ),
@@ -51,8 +51,8 @@ class _DropDownWithFlagsState extends State<DropDownWithFlags> {
                       children: [
                         Image.asset(
                           "lib/assets/usaflag.jpeg",
-                          height: 50,
-                          width: 50,
+                          height: MediaQuery.of(context).size.height * 0.1,
+                          width: MediaQuery.of(context).size.width * 0.1,
                         ),
                       ],
                     ),
@@ -66,8 +66,8 @@ class _DropDownWithFlagsState extends State<DropDownWithFlags> {
                       children: [
                         Image.asset(
                           "lib/assets/ghanaflag.jpeg",
-                          height: 50,
-                          width: 50,
+                          height: MediaQuery.of(context).size.height * 0.1,
+                          width: MediaQuery.of(context).size.width * 0.1,
                         ),
                       ],
                     ),
@@ -82,8 +82,8 @@ class _DropDownWithFlagsState extends State<DropDownWithFlags> {
                       children: [
                         Image.asset(
                           "lib/assets/ukflag.jpeg",
-                          height: 50,
-                          width: 50,
+                          height: MediaQuery.of(context).size.height * 0.1,
+                          width: MediaQuery.of(context).size.width * 0.1,
                         ),
                       ],
                     ),

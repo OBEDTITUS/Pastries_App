@@ -16,7 +16,7 @@ class NotificationPage extends StatelessWidget {
       body: Center(
         child: Row(
           children: [
-            SizedBox(width: 110),
+            SizedBox(width: MediaQuery.of(context).size.width * 0.25),
             Icon(Icons.notifications, size: 50, color: Colors.grey),
             Text("No Notifications Yet"),
           ],
