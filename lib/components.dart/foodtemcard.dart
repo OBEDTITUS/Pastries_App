@@ -23,7 +23,8 @@ class FoodItemCard extends StatelessWidget {
       elevation: 2,
       color: Colors.white,
       child: Container(
-        width: 140,
+        //height: double.infinity,
+        width: MediaQuery.of(context).size.width * 0.15,
         margin: const EdgeInsets.all(8),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -51,7 +52,7 @@ class FoodItemCard extends StatelessWidget {
             SizedBox(height: MediaQuery.of(context).size.height * 0.01),
 
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Text(
                   '\$${price.toStringAsFixed(2)}',
@@ -60,6 +61,7 @@ class FoodItemCard extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
+                Spacer(flex: 1),
                 InkWell(
                   onTap: onAdd,
                   child: Container(
