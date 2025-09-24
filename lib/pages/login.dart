@@ -142,7 +142,11 @@ class Login extends StatelessWidget {
                       ),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 15, right: 15),
+                        padding: const EdgeInsets.only(
+                          left: 15,
+                          right: 15,
+                          top: 10,
+                        ),
                         child: MyButton(onTap: signUserIn, text: 'Login'),
                       ),
                       Padding(

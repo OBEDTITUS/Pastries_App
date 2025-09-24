@@ -16,7 +16,7 @@ class MyButton extends StatelessWidget {
         );
       },
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 10.0),
+        padding: const EdgeInsets.symmetric(vertical: 5.0),
 
         child: SizedBox(
           height: MediaQuery.of(context).size.height * 0.055,

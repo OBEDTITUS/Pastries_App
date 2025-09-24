@@ -87,7 +87,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 child: Image.asset(
                   widget.imagePath,
                   width: double.infinity,
-                  height: MediaQuery.of(context).size.height * 0.3,
+                  height: MediaQuery.of(context).size.height * 0.2,
                   fit: BoxFit.cover,
                 ),
               ),
@@ -100,7 +100,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   Text(
                     widget.title,
                     style: const TextStyle(
-                      fontSize: 18,
+                      fontSize: 16,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -110,7 +110,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                       Text(
                         "\$${widget.price.toStringAsFixed(2)}",
                         style: const TextStyle(
-                          fontSize: 18,
+                          fontSize: 16,
                           fontWeight: FontWeight.w100,
                         ),
                       ),
@@ -131,7 +131,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                               icon: const Icon(
                                 Icons.add,
                                 color: Colors.white,
-                                size: 18,
+                                size: 20,
                               ),
                               onPressed: increaseQuantity,
                             ),
@@ -143,7 +143,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                           Text(
                             "$quantity",
                             style: const TextStyle(
-                              fontSize: 18,
+                              fontSize: 16,
                               fontWeight: FontWeight.w600,
                             ),
                           ),
@@ -164,7 +164,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                               icon: const Icon(
                                 Icons.remove,
                                 color: Colors.white,
-                                size: 18,
+                                size: 20,
                               ),
                               onPressed: decreaseQuantity,
                             ),
@@ -173,7 +173,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                       ),
                     ],
                   ),
-                  SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+                  SizedBox(height: MediaQuery.of(context).size.height * 0.01),
                   Text(
                     "Description",
                     style: const TextStyle(
@@ -196,13 +196,13 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   ),
                   SizedBox(height: MediaQuery.of(context).size.height * 0.01),
                   Row(children: [SizeCard()]),
-                  SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+                  SizedBox(height: MediaQuery.of(context).size.height * 0.01),
                   Row(
                     children: [
                       Text(
                         "Popular Pastries",
                         style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 18,
                           fontWeight: FontWeight.bold,
                           color: Colors.grey[700],
                         ),
@@ -247,7 +247,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 width: double.infinity,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(vertical: 25),
+                    padding: const EdgeInsets.symmetric(vertical: 15),
                     backgroundColor: Color.fromRGBO(251, 205, 23, 1),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(2),

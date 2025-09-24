@@ -34,13 +34,13 @@ class _SquareTileState extends State<SquareTile> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 15, right: 15, top: 8, bottom: 8),
+      padding: const EdgeInsets.all(8),
       child: Container(
-        height: MediaQuery.of(context).size.height * 0.15,
+        height: MediaQuery.of(context).size.height * 0.12,
         padding: const EdgeInsets.all(5),
         decoration: BoxDecoration(
           border: Border.all(color: Colors.grey.shade300),
-          borderRadius: BorderRadius.circular(15),
+          borderRadius: BorderRadius.circular(10),
           color: Colors.white,
         ),
         child: Row(
@@ -50,8 +50,8 @@ class _SquareTileState extends State<SquareTile> {
               borderRadius: BorderRadius.circular(12),
               child: Image.asset(
                 widget.imagePath!,
-                height: MediaQuery.of(context).size.height * 0.12,
-                width: MediaQuery.of(context).size.width * 0.12,
+                height: MediaQuery.of(context).size.height * 0.10,
+                width: MediaQuery.of(context).size.width * 0.25,
                 fit: BoxFit.cover,
               ),
             ),
@@ -90,7 +90,7 @@ class _SquareTileState extends State<SquareTile> {
                   icon: const Icon(
                     Icons.delete_outline,
                     color: Colors.red,
-                    size: 25,
+                    size: 20,
                   ),
                 ),
 
@@ -110,7 +110,7 @@ class _SquareTileState extends State<SquareTile> {
                         icon: const Icon(
                           Icons.add,
                           color: Colors.white,
-                          size: 18,
+                          size: 16,
                         ),
                         onPressed: increaseQuantity,
                       ),
@@ -139,7 +139,7 @@ class _SquareTileState extends State<SquareTile> {
                         icon: const Icon(
                           Icons.remove,
                           color: Colors.white,
-                          size: 18,
+                          size: 16,
                         ),
                         onPressed: decreaseQuantity,
                       ),

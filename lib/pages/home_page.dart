@@ -55,12 +55,12 @@ class HomePage extends StatelessWidget {
                   SizedBox(width: MediaQuery.of(context).size.width * 0.03),
                   Text(
                     'Hello Emily!',
-                    style: TextStyle(fontSize: 27, fontWeight: FontWeight.bold),
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                   ),
                   Spacer(),
                   CircleAvatar(
                     backgroundImage: AssetImage('lib/assets/profile1.jpeg'),
-                    radius: 30,
+                    radius: 20,
                   ),
                 ],
               ),
@@ -72,13 +72,13 @@ class HomePage extends StatelessWidget {
                   children: [
                     Icon(
                       Icons.location_on_outlined,
-                      size: 18,
+                      size: 15,
                       color: Colors.grey[600],
                     ),
                     SizedBox(width: 4),
                     Text(
                       "Jacksonville",
-                      style: TextStyle(fontSize: 16, color: Colors.grey[600]),
+                      style: TextStyle(fontSize: 15, color: Colors.grey[600]),
                     ),
                   ],
                 ),
@@ -87,13 +87,14 @@ class HomePage extends StatelessWidget {
           ),
         ),
         body: Padding(
-          padding: const EdgeInsets.only(left: 15.0, right: 15.0, top: 9.0),
+          padding: const EdgeInsets.only(left: 15.0, right: 15.0),
           child: Column(
             children: [
               Row(
                 children: [
                   SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.7,
+                    height: MediaQuery.of(context).size.height * 0.043,
+                    width: MediaQuery.of(context).size.width * 0.75,
                     child: TextField(
                       decoration: InputDecoration(
                         border: OutlineInputBorder(
@@ -105,14 +106,14 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.03),
+                  SizedBox(width: MediaQuery.of(context).size.width * 0.02),
                   Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
                       color: Color.fromRGBO(251, 205, 23, 1),
                     ),
-                    width: MediaQuery.of(context).size.width * 0.17,
-                    height: MediaQuery.of(context).size.height * 0.055,
+                    width: MediaQuery.of(context).size.width * 0.15,
+                    height: MediaQuery.of(context).size.height * 0.042,
 
                     child: IconButton(
                       onPressed: () {},
@@ -122,16 +123,16 @@ class HomePage extends StatelessWidget {
                 ],
               ),
 
-              SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.005),
               Hometopcard(imagePath: 'lib/assets/pastries4.jpeg'),
-              SizedBox(height: MediaQuery.of(context).size.height * 0.02),
-              SizedBox(height: MediaQuery.of(context).size.height * 0.01),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.005),
+
               Row(
                 children: [
                   Text(
                     "Categories",
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 18,
                       fontWeight: FontWeight.bold,
                       color: Colors.grey[700],
                     ),
@@ -153,7 +154,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: MediaQuery.of(context).size.height * 0.01),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.005),
               Row(
                 children: [
                   CategoryCard(
@@ -173,13 +174,13 @@ class HomePage extends StatelessWidget {
                 ],
               ),
 
-              SizedBox(height: MediaQuery.of(context).size.height * 0.015),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.005),
               Row(
                 children: [
                   Text(
                     "Popular Pastries",
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 18,
                       fontWeight: FontWeight.bold,
                       color: Colors.grey[700],
                     ),

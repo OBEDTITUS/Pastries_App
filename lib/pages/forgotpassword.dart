@@ -66,7 +66,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                           fontWeight: FontWeight.w500,
                         ),
                       ),
-                      SizedBox(height: 5),
+                      SizedBox(height: 8),
                       DropDownWithFlags(),
                     ],
                   ),
@@ -84,7 +84,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                           ),
                         ),
                         SizedBox(
-                          height: MediaQuery.of(context).size.height * 0.005,
+                          height: MediaQuery.of(context).size.height * 0.006,
                         ),
                         TextField(
                           decoration: InputDecoration(
@@ -109,12 +109,12 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                   ),
                 ],
               ),
-              SizedBox(height: MediaQuery.of(context).size.height * 0.58),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.65),
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(vertical: 25),
+                    padding: const EdgeInsets.symmetric(vertical: 15),
                     backgroundColor: Color.fromRGBO(251, 205, 23, 1),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(5),

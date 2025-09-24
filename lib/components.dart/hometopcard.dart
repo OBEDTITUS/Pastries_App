@@ -12,7 +12,7 @@ class Hometopcard extends StatelessWidget {
       // onTap: onTap,
       child: Container(
         margin: const EdgeInsets.symmetric(horizontal: 1),
-        height: MediaQuery.of(context).size.height * 0.17,
+        height: MediaQuery.of(context).size.height * 0.15,
         width: double.infinity,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),

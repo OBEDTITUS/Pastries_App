@@ -24,7 +24,7 @@ class FoodItemCard extends StatelessWidget {
       color: Colors.white,
       child: Container(
         //height: double.infinity,
-        width: MediaQuery.of(context).size.width * 0.15,
+        width: MediaQuery.of(context).size.width * 0.4,
         margin: const EdgeInsets.all(8),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

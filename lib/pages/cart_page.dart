@@ -75,7 +75,12 @@ class CartPage extends StatelessWidget {
           ),
 
           Padding(
-            padding: const EdgeInsets.all(24.0),
+            padding: const EdgeInsets.only(
+              top: 0,
+              left: 24.0,
+              right: 24.0,
+              bottom: 24.0,
+            ),
             child: Column(
               children: [
                 Row(
@@ -91,7 +96,7 @@ class CartPage extends StatelessWidget {
                     Text(
                       "\$${totalPrice.toStringAsFixed(2)}",
                       style: const TextStyle(
-                        fontSize: 20,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                       ),
@@ -104,7 +109,7 @@ class CartPage extends StatelessWidget {
                   width: double.infinity,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      padding: const EdgeInsets.symmetric(vertical: 25),
+                      padding: const EdgeInsets.symmetric(vertical: 15),
                       backgroundColor: Color.fromRGBO(251, 205, 23, 1),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(2),

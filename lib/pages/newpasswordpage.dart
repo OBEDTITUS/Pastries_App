@@ -73,14 +73,14 @@ class Newpasswordpage extends StatelessWidget {
             ),
           ),
           NewTextfield(controller: passwordController, hintText: " Password"),
-          SizedBox(height: MediaQuery.of(context).size.height * 0.4),
+          SizedBox(height: MediaQuery.of(context).size.height * 0.5),
           Padding(
             padding: const EdgeInsets.only(left: 15.0, right: 15.0),
             child: SizedBox(
               width: double.infinity,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  padding: const EdgeInsets.symmetric(vertical: 25),
+                  padding: const EdgeInsets.symmetric(vertical: 15),
                   backgroundColor: Color.fromRGBO(251, 205, 23, 1),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
