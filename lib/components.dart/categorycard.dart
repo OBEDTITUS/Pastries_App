@@ -13,12 +13,12 @@ class CategoryCard extends StatelessWidget {
       shadowColor: Colors.white,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       child: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 4),
+        // margin: const EdgeInsets.symmetric(horizontal: 1),
         height: 30,
         width: 90,
         decoration: BoxDecoration(
           color: Colors.white,
-          boxShadow: [BoxShadow(color: Colors.white, blurRadius: 30)],
+          boxShadow: [BoxShadow(color: Colors.white, blurRadius: 10)],
         ),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,

@@ -32,8 +32,8 @@ class _WelcomePageState extends State<WelcomePage> {
           children: [
             Image.asset(
               "lib/assets/logoimage.png",
-              width: MediaQuery.of(context).size.width * 0.4,
-              height: MediaQuery.of(context).size.height * 0.2,
+              width: MediaQuery.of(context).size.width * 0.5,
+              height: MediaQuery.of(context).size.height * 0.3,
             ),
           ],
         ),

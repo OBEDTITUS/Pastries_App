@@ -14,7 +14,7 @@ class Newtextbutton extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       style: TextButton.styleFrom(
-        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 20),
+        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 5),
         backgroundColor: Colors.transparent,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8),

@@ -21,7 +21,7 @@ class Login extends StatelessWidget {
       body: Column(
         children: [
           Container(
-            height: MediaQuery.of(context).size.height * 0.2,
+            height: MediaQuery.of(context).size.height * 0.18,
             width: double.infinity,
             decoration: BoxDecoration(
               gradient: LinearGradient(
@@ -62,9 +62,9 @@ class Login extends StatelessWidget {
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(bottom: 50.0),
+                        padding: const EdgeInsets.only(bottom: 35.0),
                         child: Container(
-                          height: MediaQuery.of(context).size.height * 0.009,
+                          height: MediaQuery.of(context).size.height * 0.008,
                           width: MediaQuery.of(context).size.width * 0.3,
                           color: Colors.grey,
                         ),
@@ -170,7 +170,7 @@ class Login extends StatelessWidget {
                       ),
                       Padding(
                         padding: const EdgeInsets.only(
-                          top: 8.0,
+                          top: 5.0,
                           left: 15.0,
                           right: 15.0,
                         ),
@@ -181,7 +181,7 @@ class Login extends StatelessWidget {
                         ),
                       ),
                       SizedBox(
-                        height: MediaQuery.of(context).size.height * 0.04,
+                        height: MediaQuery.of(context).size.height * 0.025,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
