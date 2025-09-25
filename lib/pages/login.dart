@@ -62,7 +62,7 @@ class Login extends StatelessWidget {
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(bottom: 35.0),
+                        padding: const EdgeInsets.only(bottom: 30.0),
                         child: Container(
                           height: MediaQuery.of(context).size.height * 0.008,
                           width: MediaQuery.of(context).size.width * 0.3,
@@ -84,7 +84,7 @@ class Login extends StatelessWidget {
                         style: TextStyle(),
                       ),
                       SizedBox(
-                        height: MediaQuery.of(context).size.height * 0.03,
+                        height: MediaQuery.of(context).size.height * 0.02,
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,

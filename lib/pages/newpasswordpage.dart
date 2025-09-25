@@ -16,12 +16,13 @@ class Newpasswordpage extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: true,
         backgroundColor: Colors.white,
+        toolbarHeight: 30,
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: const EdgeInsets.only(left: 15, bottom: 20, top: 10),
+            padding: const EdgeInsets.only(left: 15, bottom: 5, top: 10),
             child: RichText(
               textAlign: TextAlign.start,
               text: const TextSpan(
@@ -56,7 +57,7 @@ class Newpasswordpage extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 8.1),
+          // SizedBox(height: 5),
           NewTextfield(controller: newpasswordController, hintText: "Password"),
           Padding(
             padding: const EdgeInsets.symmetric(

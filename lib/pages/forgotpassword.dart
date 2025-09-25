@@ -27,7 +27,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
             icon: Icon(Icons.arrow_back),
           ),
           backgroundColor: Colors.white,
-          //toolbarHeight: 50,
+          toolbarHeight: 40,
         ),
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15),
@@ -53,7 +53,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                   ],
                 ),
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: 8),
               Row(
                 children: [
                   Column(
@@ -109,7 +109,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                   ),
                 ],
               ),
-              SizedBox(height: MediaQuery.of(context).size.height * 0.65),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.62),
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(

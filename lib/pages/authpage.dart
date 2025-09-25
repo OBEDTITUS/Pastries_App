@@ -19,6 +19,7 @@ class AuthPage extends StatelessWidget {
           icon: Icon(Icons.arrow_back),
         ),
         backgroundColor: Colors.white,
+        toolbarHeight: 30,
       ),
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -56,7 +57,7 @@ class AuthPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: MediaQuery.of(context).size.height * 0.03),
+                SizedBox(height: MediaQuery.of(context).size.height * 0.02),
 
                 Padding(
                   padding: const EdgeInsets.only(right: 8, top: 0),

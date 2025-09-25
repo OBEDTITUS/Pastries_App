@@ -16,10 +16,10 @@ class MyButton extends StatelessWidget {
         );
       },
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 5.0),
+        padding: const EdgeInsets.symmetric(vertical: 1.0),
 
         child: SizedBox(
-          height: MediaQuery.of(context).size.height * 0.055,
+          height: MediaQuery.of(context).size.height * 0.06,
           child: Container(
             decoration: BoxDecoration(
               color: Color.fromRGBO(251, 205, 23, 1),
