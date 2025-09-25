@@ -2,20 +2,18 @@ import 'package:flutter/material.dart';
 
 class Hometopcard extends StatelessWidget {
   final String imagePath;
-  //final VoidCallback onTap;
 
   const Hometopcard({super.key, required this.imagePath});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      // onTap: onTap,
       child: Container(
         margin: const EdgeInsets.symmetric(horizontal: 1),
         height: MediaQuery.of(context).size.height * 0.15,
         width: double.infinity,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(10),
           image: DecorationImage(
             image: AssetImage(imagePath),
             fit: BoxFit.cover,
@@ -26,7 +24,7 @@ class Hometopcard extends StatelessWidget {
           children: [
             Container(
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(16),
+                borderRadius: BorderRadius.circular(10),
                 color: Colors.black.withOpacity(0.4),
               ),
             ),

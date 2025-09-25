@@ -15,10 +15,10 @@ class CategoryCard extends StatelessWidget {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
       child: Container(
         margin: EdgeInsets.symmetric(
-          horizontal: MediaQuery.of(context).size.width * 0.019,
+          horizontal: MediaQuery.of(context).size.width * 0.020,
         ),
         height: 30,
-        width: 80,
+        width: 83,
         decoration: BoxDecoration(
           color: Colors.white,
           boxShadow: [BoxShadow(color: Colors.white, blurRadius: 10)],
@@ -30,8 +30,8 @@ class CategoryCard extends StatelessWidget {
             Center(
               child: Image.asset(
                 imagePath,
-                height: MediaQuery.of(context).size.height * 0.06,
-                width: MediaQuery.of(context).size.width * 0.06,
+                height: MediaQuery.of(context).size.height * 0.05,
+                width: MediaQuery.of(context).size.width * 0.05,
               ),
             ),
 

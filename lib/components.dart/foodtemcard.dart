@@ -22,15 +22,16 @@ class FoodItemCard extends StatelessWidget {
       shadowColor: Colors.white,
       elevation: 2,
       color: Colors.white,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       child: Container(
-        height: 185,
+        height: MediaQuery.of(context).size.height * 0.27,
         width: MediaQuery.of(context).size.width * 0.4,
         margin: const EdgeInsets.all(8),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             ClipRRect(
-              borderRadius: BorderRadius.circular(16),
+              borderRadius: BorderRadius.circular(10),
               child: Image.asset(
                 imagePath,
                 height: MediaQuery.of(context).size.height * 0.15,

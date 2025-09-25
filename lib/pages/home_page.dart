@@ -196,6 +196,8 @@ class HomePage extends StatelessWidget {
                 ),
                 SizedBox(height: MediaQuery.of(context).size.height * 0.002),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     CategoryCard(
                       imagePath: 'lib/assets/pastries1.jpeg',
@@ -251,7 +253,7 @@ class HomePage extends StatelessWidget {
                     crossAxisCount: 2,
                     crossAxisSpacing: 4,
                     mainAxisSpacing: 4,
-                    childAspectRatio: 0.75,
+                    childAspectRatio: 0.7,
                   ),
                   itemCount: foodItems.length,
                   itemBuilder: (context, index) {
