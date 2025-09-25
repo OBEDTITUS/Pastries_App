@@ -36,6 +36,34 @@ class HomePage extends StatelessWidget {
       "price": 4.50,
       //"onAdd": () {},
     },
+    {
+      "image": "lib/assets/pastries2.jpeg",
+      "title": "Chocolate Cake",
+      "subtitle": "Dessert",
+      "price": 7.25,
+      //"onAdd": () {},
+    },
+    {
+      "image": "lib/assets/pastries5.jpeg",
+      "title": "Deepthi Click",
+      "subtitle": "Expresso",
+      "price": 3.95,
+      //"onAdd": () {},
+    },
+    {
+      "image": "lib/assets/pastries4.jpeg",
+      "title": "American Pie",
+      "subtitle": "Dessert",
+      "price": 9.50,
+      //"onAdd": () {},
+    },
+    {
+      "image": "lib/assets/pastries1.jpeg",
+      "title": "Cornish Pie",
+      "subtitle": "Nigeria",
+      "price": 5.56,
+      //"onAdd": () {},
+    },
   ];
 
   @override
@@ -89,24 +117,29 @@ class HomePage extends StatelessWidget {
         body: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Padding(
-            padding: const EdgeInsets.only(left: 15.0, right: 15.0),
+            padding: const EdgeInsets.only(left: 15.0, right: 15.0, top: 2.5),
             child: Column(
               children: [
                 Row(
                   children: [
                     SizedBox(
-                      height: MediaQuery.of(context).size.height * 0.048,
+                      height: MediaQuery.of(context).size.height * 0.05,
                       width: MediaQuery.of(context).size.width * 0.75,
-                      child: TextField(
-                        decoration: InputDecoration(
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide(color: Colors.grey.shade400),
-                          ),
-                          labelText: 'Search',
-                          prefixIcon: Icon(
-                            Icons.search,
-                            color: Colors.grey[500],
+                      child: Center(
+                        child: TextField(
+                          decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(8),
+                              borderSide: BorderSide(
+                                color: Colors.grey.shade400,
+                              ),
+                            ),
+                            labelText: 'Search',
+                            prefixIcon: Icon(
+                              Icons.search,
+                              color: Colors.grey[500],
+                              //size: 10,
+                            ),
                           ),
                         ),
                       ),
