@@ -45,7 +45,7 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.white,
         appBar: AppBar(
           backgroundColor: Colors.white,
-          toolbarHeight: 90,
+          toolbarHeight: 80,
           automaticallyImplyLeading: false,
           title: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -55,7 +55,7 @@ class HomePage extends StatelessWidget {
                   SizedBox(width: MediaQuery.of(context).size.width * 0.03),
                   Text(
                     'Hello Emily!',
-                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                   Spacer(),
                   CircleAvatar(
@@ -95,12 +95,12 @@ class HomePage extends StatelessWidget {
                 Row(
                   children: [
                     SizedBox(
-                      height: MediaQuery.of(context).size.height * 0.043,
+                      height: MediaQuery.of(context).size.height * 0.048,
                       width: MediaQuery.of(context).size.width * 0.75,
                       child: TextField(
                         decoration: InputDecoration(
                           border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(12),
+                            borderRadius: BorderRadius.circular(10),
                             borderSide: BorderSide(color: Colors.grey.shade400),
                           ),
                           labelText: 'Search',
@@ -114,15 +114,17 @@ class HomePage extends StatelessWidget {
                     SizedBox(width: MediaQuery.of(context).size.width * 0.02),
                     Container(
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(12),
+                        borderRadius: BorderRadius.circular(10),
                         color: Color.fromRGBO(251, 205, 23, 1),
                       ),
                       width: MediaQuery.of(context).size.width * 0.15,
-                      height: MediaQuery.of(context).size.height * 0.042,
+                      height: MediaQuery.of(context).size.height * 0.045,
 
-                      child: IconButton(
-                        onPressed: () {},
-                        icon: Icon(Icons.tune, color: Colors.white),
+                      child: Center(
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.tune, color: Colors.white),
+                        ),
                       ),
                     ),
                   ],
@@ -159,7 +161,7 @@ class HomePage extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: MediaQuery.of(context).size.height * 0.005),
+                SizedBox(height: MediaQuery.of(context).size.height * 0.002),
                 Row(
                   children: [
                     CategoryCard(

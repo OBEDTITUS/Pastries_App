@@ -15,7 +15,7 @@ class CategoryCard extends StatelessWidget {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       child: Container(
         margin: EdgeInsets.symmetric(
-          horizontal: MediaQuery.of(context).size.width * 0.025,
+          horizontal: MediaQuery.of(context).size.width * 0.018,
         ),
         height: 30,
         width: 85,

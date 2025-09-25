@@ -34,7 +34,7 @@ class _SquareTileState extends State<SquareTile> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8),
+      padding: const EdgeInsets.all(5),
       child: Container(
         height: MediaQuery.of(context).size.height * 0.12,
         padding: const EdgeInsets.all(5),
@@ -110,7 +110,7 @@ class _SquareTileState extends State<SquareTile> {
                         icon: const Icon(
                           Icons.add,
                           color: Colors.white,
-                          size: 16,
+                          size: 14,
                         ),
                         onPressed: increaseQuantity,
                       ),
@@ -139,7 +139,7 @@ class _SquareTileState extends State<SquareTile> {
                         icon: const Icon(
                           Icons.remove,
                           color: Colors.white,
-                          size: 16,
+                          size: 14,
                         ),
                         onPressed: decreaseQuantity,
                       ),
