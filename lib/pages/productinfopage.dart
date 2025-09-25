@@ -247,7 +247,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 width: double.infinity,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(vertical: 15),
+                    padding: const EdgeInsets.symmetric(vertical: 12),
                     backgroundColor: Color.fromRGBO(251, 205, 23, 1),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(2),

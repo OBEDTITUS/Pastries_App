@@ -23,7 +23,7 @@ class FoodItemCard extends StatelessWidget {
       elevation: 2,
       color: Colors.white,
       child: Container(
-        //height: double.infinity,
+        height: 185,
         width: MediaQuery.of(context).size.width * 0.4,
         margin: const EdgeInsets.all(8),
         child: Column(
@@ -38,6 +38,7 @@ class FoodItemCard extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
+
             SizedBox(height: MediaQuery.of(context).size.height * 0.01),
 
             Text(
@@ -49,7 +50,7 @@ class FoodItemCard extends StatelessWidget {
               subtitle,
               style: TextStyle(color: Colors.grey[600], fontSize: 13),
             ),
-            SizedBox(height: MediaQuery.of(context).size.height * 0.01),
+            Spacer(flex: 1),
 
             Row(
               mainAxisAlignment: MainAxisAlignment.start,

@@ -15,7 +15,7 @@ class _DropDownWithFlagsState extends State<DropDownWithFlags> {
       children: [
         SizedBox(
           width: MediaQuery.of(context).size.width * 0.24,
-          height: MediaQuery.of(context).size.height * 0.07,
+          height: MediaQuery.of(context).size.height * 0.065,
 
           child: Container(
             decoration: BoxDecoration(

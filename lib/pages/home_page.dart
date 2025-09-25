@@ -147,11 +147,11 @@ class HomePage extends StatelessWidget {
                     SizedBox(width: MediaQuery.of(context).size.width * 0.02),
                     Container(
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
+                        borderRadius: BorderRadius.circular(8),
                         color: Color.fromRGBO(251, 205, 23, 1),
                       ),
                       width: MediaQuery.of(context).size.width * 0.15,
-                      height: MediaQuery.of(context).size.height * 0.045,
+                      height: MediaQuery.of(context).size.height * 0.048,
 
                       child: Center(
                         child: IconButton(
@@ -163,7 +163,7 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
 
-                SizedBox(height: MediaQuery.of(context).size.height * 0.008),
+                SizedBox(height: MediaQuery.of(context).size.height * 0.009),
                 Hometopcard(imagePath: 'lib/assets/pastries4.jpeg'),
                 SizedBox(height: MediaQuery.of(context).size.height * 0.005),
 
@@ -249,9 +249,9 @@ class HomePage extends StatelessWidget {
                   padding: const EdgeInsets.all(8),
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
-                    crossAxisSpacing: 12,
-                    mainAxisSpacing: 12,
-                    childAspectRatio: 0.65,
+                    crossAxisSpacing: 4,
+                    mainAxisSpacing: 4,
+                    childAspectRatio: 0.75,
                   ),
                   itemCount: foodItems.length,
                   itemBuilder: (context, index) {
