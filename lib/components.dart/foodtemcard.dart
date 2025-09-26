@@ -24,7 +24,7 @@ class FoodItemCard extends StatelessWidget {
       color: Colors.white,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       child: Container(
-        height: MediaQuery.of(context).size.height * 0.27,
+        height: MediaQuery.of(context).size.height * 0.29,
         width: MediaQuery.of(context).size.width * 0.4,
         margin: const EdgeInsets.all(8),
         child: Column(
